@@ -4,7 +4,7 @@
 
 ### 1. Which company owns Java now, and what is the latest version?
 - Java is owned by **Oracle Corporation**.
-- The latest version can be checked on [Oracle's official website](https://www.oracle.com/java/technologies/javase-downloads.html).
+- The latest version of java is JDK 24 can be checked on [Oracle's official website](https://www.oracle.com/java/technologies/javase-downloads.html).
 
 ### 2. What are the 2 steps in Java compilation? Explain the 2 steps.
 - **Compilation**: Java source code (`.java`) is compiled into bytecode (`.class`).
@@ -100,7 +100,55 @@
   static { System.out.println("Static Block Executed"); }
   ```
 
----
+### 21. Can an abstract class contain non-abstract methods?
+- Yes, an **abstract class** can have **both abstract and non-abstract methods**.
 
-This file now contains **all Java and OOPs interview questions** extracted from the **Excel sheet**, along with concise answers. Let me know if you need any modifications! 🚀
+### 22. Can a normal class contain abstract methods?
+- No, a **non-abstract (concrete) class** **cannot** have abstract methods.
+
+### 23. Can an interface contain variables?
+- Yes, but they are implicitly **public, static, and final**.
+
+### 24. What is the default value of a reference variable in Java?
+- The default value is **null**.
+
+### 25. What is the difference between `this` and `super` keywords?
+- `this` refers to the **current class instance**.
+- `super` refers to the **parent class instance**.
+
+### 26. What is the difference between `throw` and `throws`?
+- `throw`: Used to **explicitly throw** an exception.
+- `throws`: Declares exceptions that a method **may** throw.
+
+### 27. Can we override the `main` method in Java?
+- No, but we can **overload** it with different parameters.
+
+### 28. Can a static method access instance variables?
+- No, a **static method** cannot directly access **instance variables**.
+
+### 29. What is the purpose of the `transient` keyword?
+- **Marks a variable as non-serializable** (ignored during serialization).
+
+### 30. Can we make the constructor `final` in Java?
+- No, a **constructor cannot be final**.
+
+### 31. What is the difference between `String`, `StringBuilder`, and `StringBuffer`?
+- **String**: Immutable.
+- **StringBuilder**: Mutable, not synchronized.
+- **StringBuffer**: Mutable, synchronized.
+
+### 32. What is method hiding in Java?
+- When a **static method** in a subclass **redefines** a **static method** in its parent class.
+
+### 33. Can we have multiple public classes in a Java file?
+- No, **only one public class** per `.java` file.
+
+### 34. What is a `volatile` variable in Java?
+- A **volatile variable** ensures visibility of changes across **multiple threads**.
+
+### 35. What is the difference between deep copy and shallow copy?
+- **Shallow copy**: Copies references, not objects.
+- **Deep copy**: Creates a new independent copy of objects.
+
+---
 
