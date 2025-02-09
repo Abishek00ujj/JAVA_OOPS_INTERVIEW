@@ -150,5 +150,81 @@
 - **Shallow copy**: Copies references, not objects.
 - **Deep copy**: Creates a new independent copy of objects.
 
+- What is a constructor?
+A constructor is a special method that initializes an object when it is created; it has the same name as the class.
+
+What are the types of constructors?
+Java has default (no-arg) constructor, parameterized constructor, and copy constructor (manually implemented).
+
+What is the practical use of a constructor?
+A constructor initializes objects automatically and enforces mandatory fields during object creation.
+
+What is constructor chaining?
+Calling one constructor from another within the same class (this()) or from a superclass (super()).
+
+What is method overloading?
+Defining multiple methods with the same name but different parameters (method signature differs).
+
+
+What is the use of this & super keyword?
+this refers to the current instance, while super refers to the parent class instance or constructor.
+
+Write a program for encapsulation and explain with an example.
+Encapsulation hides data using private fields and provides access via public getters/setters.
+
+java
+Copy
+Edit
+class Person {
+    private String name;
+    public void setName(String name) { this.name = name; }
+    public String getName() { return name; }
+}
+Write a program for inheritance and explain with an example.
+Inheritance allows a child class to inherit properties and methods from a parent class.
+
+class Animal { void sound() { System.out.println("Animal makes a sound"); } }
+class Dog extends Animal { void sound() { System.out.println("Bark"); } }
+What is single, multiple, multi-level inheritance?
+
+Single: One class inherits another (class B extends A).
+Multi-level: A class inherits another, which inherits another (A → B → C).
+Multiple: Java does not support multiple inheritance via classes, but supports it via interfaces.
+What is polymorphism? Write a program for compile-time polymorphism?
+Polymorphism allows one method to take multiple forms. Compile-time polymorphism is achieved using method overloading.
+
+class MathUtils {
+    int add(int a, int b) { return a + b; }
+    double add(double a, double b) { return a + b; }
+}
+
+
+
+What is run-time polymorphism? Explain with an example.
+Run-time polymorphism (dynamic method dispatch) occurs when method overriding is resolved at runtime.
+
+java
+Copy
+Edit
+class Animal { void sound() { System.out.println("Animal makes a sound"); } }
+class Dog extends Animal { void sound() { System.out.println("Bark"); } }
+Animal a = new Dog(); a.sound(); // Calls Dog's method
+What is the difference between abstraction & encapsulation?
+
+Abstraction hides implementation details using abstract classes or interfaces.
+Encapsulation hides data using private fields and provides controlled access via getters/setters.
+Does Java or Python support multiple inheritance?
+
+Java: No multiple class inheritance (only via interfaces).
+Python: Supports multiple class inheritance.
+What is early binding and late binding?
+
+Early binding (static binding): Resolved at compile-time (e.g., method overloading).
+Late binding (dynamic binding): Resolved at runtime (e.g., method overriding).
+What is method overloading and method overriding?
+
+Overloading: Same method name, different parameters (compile-time polymorphism).
+Overriding: Subclass redefines parent class method (runtime polymorphism).
+
 ---
 
